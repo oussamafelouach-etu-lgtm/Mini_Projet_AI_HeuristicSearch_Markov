@@ -89,8 +89,6 @@ def fundamental_matrix(Q: np.ndarray) -> np.ndarray:
     """
     N = (I - Q)^{-1}
 
-    N[i,j] = expected number of times the chain is in transient state j
-              before absorption, starting from transient state i.
     """
     I = np.eye(Q.shape[0])
     return np.linalg.inv(I - Q)

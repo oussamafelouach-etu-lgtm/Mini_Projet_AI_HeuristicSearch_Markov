@@ -1,12 +1,6 @@
 """
 astar.py — A* search algorithm (and Weighted A*).
 
-Correctness features:
-  - Min-heap priority queue via heapq
-  - g-cost updates with lazy deletion from OPEN
-  - Re-opening of CLOSED nodes when a cheaper path is found
-    (required when heuristic is not consistent / monotone)
-  - Full logging via SearchLogger
 """
 
 import heapq
